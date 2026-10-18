@@ -1,14 +1,12 @@
-const x = document.getElementById("demo");
-
 function getLocation() {
-  try {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } catch(err) {
-    x.innerHTML = err;
-  }
-}
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else { 
+          demo.innerHTML = "Geolocalização não é suportada por este navegador.";
+        }
+      }
 
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
+      function showPosition(position) {
+        demo.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
