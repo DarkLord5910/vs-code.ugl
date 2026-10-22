@@ -2,30 +2,38 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Página - Ueslei</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <h1> -olá meu nome Ueslei</h1>
-      <h2>  sou estudante de ADS na faculdade Uniasselvi </h2>
-      <h3>-tudo bem com você </h3>
-    </div>
- 
-  <p>Clique para obter suas coordenadas</p>
-    <button onclick="getLocation()">Clica Aqui</button>
-  <p id="demo"></p>
+    <header class="apresentacao">
+      <h1 id="h1">- Olá, o meu nome é Ueslei</h1>
+      <h2 id="h2">Sou estudante de ADS na faculdade UNIASSELVI</h2>
+      <h3 id="h3">- Tudo bem com voce ?</h3>
+    </header>
 
- <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3RoaWtobnRqdDVqMDl2OHVhMjVibnIwNjdzbmxhdGNqNW80OHFpNyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/WRQBXSCnEFJIuxktnw/200.webp" alt="Computer man" style="width:68px;height:68px;">
+    <main class="conteudo">
+      <p>Clique para obter as suas coordenadas:</p>
+      <button type="button" onclick="getLocation()">Clica Aqui</button>
+      <p id="demo">A aguardar localização...</p>
 
- <div class="img">
-   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFmaDBhdWczbnMwNHJyYzMwMThkczg1emxoN2J5OGhueDU5a2Q3cCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/2gLxx75OmfCaNu2yI8/giphy.webp" alt="Paris" width="90" height="90"> 
-     </div> 
-    
-     <div id="div h1" class="h1"></div>
-    <div id="div h2" class="h2"></div>
-    <div id="div h3" class="h3"></div>
-  
+      <div class="galeria-gifs">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3RoaWtobnRqdDVqMDl2OHVhMjVibnIwNjdzbmxhdGNqNW80OHFpNyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/WRQBXSCnEFJIuxktnw/200.webp"
+          alt="Homem ao computador"
+          width="68"
+          height="68"
+        />
+        <img
+          src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFmaDBhdWczbnMwNHJyYzMwMThkczg1emxoN2J5OGhueDU5a2Q3cCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/2gLxx75OmfCaNu2yI8/giphy.webp"
+          alt="Animação secundária"
+          width="90"
+          height="90"
+        />
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
